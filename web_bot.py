@@ -103,6 +103,6 @@ if st.button("Send"):
     if user_input:
         response, updated_history = chatbot_response(user_input, st.session_state.history)
         st.session_state.history = updated_history
-        st.write(f"Amira: {response}")
+        st.write(f"**Amira**: {response}")
     else:
         st.write("Amira: Please enter a message.")
